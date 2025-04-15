@@ -180,7 +180,7 @@ const TaskForm = ({ task, onSuccess }: TaskFormProps) => {
             <SelectValue placeholder="Select category" />
           </SelectTrigger>
           <SelectContent className="bg-card border-border">
-            <SelectItem value="">No Category</SelectItem>
+            <SelectItem value="none" className="flex items-center gap-2">No Category</SelectItem>
             {categories.map((cat) => (
               <SelectItem key={cat.id} value={cat.id} className="flex items-center gap-2">
                 <div className="flex items-center gap-2">
